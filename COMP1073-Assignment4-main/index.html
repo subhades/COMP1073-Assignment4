@@ -1,0 +1,33 @@
+<!--Micha Laforest, 0546528
+Amanda Robinson, 1181969
+Abigail Becher Nienhaus, 1179575
+Mike Wilks, 1196904s-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Where are you</title>
+        <link rel="stylesheet" href="./css/style.css">
+        
+    </head>
+    <body>
+        <main>
+            <!--Title-->
+            <h2>Where are you now?</h2>
+            <!--Telling users what to do-->
+            <p>Click the button to get your exact location!.</p>
+            <!--Button with onlick acction that pulls the javascript function to pull the API Geolocation-->
+            <button onclick="getLocation()">Try It</button>
+            <!--Saved space to display google map-->
+            <div id="map"></div>
+            <!--Inline JS to connect the website to the google maps with personalized API-->
+            <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9hO7Ka9zxCLIkHLAWPUVnuFd88tn1u6U&callback=initMap">
+            </script>
+            <!--Linking with the js functions-->
+            <script src="./js/main.js" defer></script>
+        </main>
+    </body>
+</html>
